@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="manifest" href="./manifest.json">
+<link rel="manifest" href="/guias-practica-clinica-hdsr/manifest.json">
 <meta name="theme-color" content="#15375c">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="GPC HDSR">
-<link rel="apple-touch-icon" href="icons/icon-152x152.png">
-<link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="/guias-practica-clinica-hdsr/icons/icon-180x180.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/guias-practica-clinica-hdsr/icons/icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/guias-practica-clinica-hdsr/icons/icon-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/guias-practica-clinica-hdsr/favicon.ico">
+<link rel="shortcut icon" href="/guias-practica-clinica-hdsr/favicon.ico">
 <title>Guías de Práctica Clínica · Hospital San Rafael de Zarzal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -1373,7 +1373,7 @@ updateAdminUI();
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       // Ruta relativa para compatibilidad con GitHub Pages en subcarpeta
-      navigator.serviceWorker.register('./sw.js')
+      navigator.serviceWorker.register('/guias-practica-clinica-hdsr/sw.js')
         .then(reg => console.log('SW registrado:', reg.scope))
         .catch(err => console.warn('SW no registrado:', err));
     });
